@@ -1,7 +1,13 @@
 #page-header {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
     background-color: #ff9400;
     margin-top: 0;
-    padding: 20px 20px 20px 40px;
+    padding: 0 20px 0 40px;
+    z-index: 2;
+    height: 80px;
 }
 
 #page-header h1, #page-header h1 a, #page-header h1 a:visited {
@@ -9,6 +15,7 @@
     font-size: 36pt;
     text-decoration: none;
     transition: .5s;
+    margin: 10px 0 0 0;
 }
 
 #page-header h1 a:hover {
@@ -19,6 +26,9 @@
 
 .content {
     margin-left: 40px;
+    position: absolute;
+    z-index: 1;
+    top: 100px;
 }
 
 h1, h2, h3, h4 {
@@ -37,12 +47,17 @@ h1, h2, h3, h4 {
     width: 100%;
 }
 
-.top-menu, .top-menu:hover, .top-menu:visited {
+.top-menu {
     color: #ffffff;
     float: right;
     font-size: 26pt;
     margin-right: 20px;
-    padding-top: 1em;
+    padding-top: 20px;
+}
+
+.top-menu:hover {
+    color: #000000;
+    transition: .7s;
 }
 
 .post {
@@ -60,3 +75,21 @@ h1, h2, h3, h4 {
     transition: .8s;
 }
 
+.footer {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    bottom: 0;
+    background-color: #ff9400;
+    opacity: 0.7;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.footer span {
+    opacity: 1;
+    color: #000;
+}
+.footer a {
+    opacity: 1;
+}
