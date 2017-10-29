@@ -8,10 +8,13 @@
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
+    transition: .5s;
 }
 
-#page-header h1 a:active {
-    color: cadetblue;
+#page-header h1 a:hover {
+    padding-left: 40px;
+    color: black;
+    transition: .5s;    
 }
 
 .content {
@@ -39,12 +42,21 @@ h1, h2, h3, h4 {
     float: right;
     font-size: 26pt;
     margin-right: 20px;
+    padding-top: 1em;
 }
 
 .post {
     margin-bottom: 70px;
 }
 
-.post h1 a, .post h1 a:visited {
+.post h1 a {
     color: #000000;
+    transition: 1s;
 }
+
+.post h1 a:hover {
+    color: mediumseagreen;
+    padding-left: 40px;
+    transition: .8s;
+}
+
